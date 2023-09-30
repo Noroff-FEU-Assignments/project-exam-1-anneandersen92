@@ -6,8 +6,8 @@
 :root {
     /* colors */
     --clr-light-beige: #f5f0ea;
-    --clr-light-beige-90: #f5f0ea90;
-    /*--clr-medium-beige: #e5dcd2;*/
+    /*--clr-light-beige-90: #f5f0ea90;*/
+    --clr-medium-beige: #e5dcd2;
     --clr-medium-beige-90: #e5dcd290;
     --clr-dark-beige: #baa48e;
 
@@ -16,7 +16,7 @@
     --clr-dark-green: #acd09a;
 
     --clr-white: #ffffff;
-    --clr-white-50: #ffffff50;
+    --clr-white-80: #ffffff80;
     --clr-charcoal: #333333;
 
 
@@ -25,11 +25,11 @@
     --ff-body: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     ;
 
-    --fs-h1: 2.6rem;
-    --fs-h2: 7.5rem;
-    --fs-h3: 1.5rem;
-    --fs-body: 1.2rem;
-    --fs-body-small: 1rem;
+    --fs-h1: 2.5rem;
+    --fs-h2: 7rem;
+    --fs-h3: 1.4rem;
+    --fs-body: 1rem;
+    --fs-body-small: 0.8rem;
 
     --fw-300: 300;
     --fw-500: 500;
@@ -38,12 +38,13 @@
     --tt-lower: lowercase;
     --tt-cap: capitalize;
 
-    --ls-4: 4%;
-    --ls-5: 5%;
-    --ls-6: 6%;
+    --ls-1: 1px;
+    --ls-2: 2px;
+    --ls-3: 3px;
+    --ls-4: 4px;
+    --ls-5: 5px;
+    --ls-6: 6px;
 
     /* margin */
-
-    --mgn-center: 0 auto;
     --mgn-zero: 0;
 }
