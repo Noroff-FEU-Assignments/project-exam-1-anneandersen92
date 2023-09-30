@@ -1,0 +1,72 @@
+@import url(./variables.css);
+
+
+/* text */
+.text-charcoal {
+    color: var(--clr-charcoal);
+}
+
+.text-white {
+    color: var(--clr-white);
+}
+
+.text-white-50 {
+    color: var(--clr-white-50);
+}
+
+.text-beige {
+    color: var(--clr-dark-beige);
+}
+
+.text-green {
+    color: var(--clr-dark-green);
+}
+
+.fs-body-small {
+    font-size: var(--fs-body-small);
+}
+
+.fw-medium {
+    font-weight: var(--fw-500);
+}
+
+.tt-uppercase {
+    text-transform: var(--tt-upper);
+}
+
+.tt-lowercase {
+    text-transform: var(--tt-lower);
+}
+
+.tt-capitalize {
+    text-transform: var(--tt-cap);
+}
+
+/* background */
+.bg-light-beige {
+    color: var(--clr-light-beige);
+}
+
+.bg-light-beige-90 {
+    color: var(--clr-light-beige-90);
+}
+
+.bg-medium-beige-90 {
+    color: var(--clr-medium-beige);
+}
+
+.bg-dark-beige {
+    color: var(--clr-dark-beige);
+}
+
+.bg-light-green {
+    color: var(--clr-light-green);
+}
+
+.bg-dark-green {
+    color: var(--clr-dark-green);
+}
+
+.bg-charcoal {
+    color: var(--clr-charcoal);
+}
