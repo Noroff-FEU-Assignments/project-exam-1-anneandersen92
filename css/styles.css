@@ -87,23 +87,29 @@ img {
     padding: 12px 0;
 }
 
-.blogpost-card {
+.featured-card {
     display: grid;
     grid-template-rows: auto 150px;
     min-width: 160px;
 }
 
-.blogpost-card img {
+.featured-card img {
     height: 100%;
     object-position: 30% 0;
 }
 
-.blogpost-card h3 {
+.featured-card h3 {
     margin: 16px;
 }
 
 
 /* social media */
+.heart {
+    width: 50pt;
+    margin: 6px;
+    filter: invert(77%) sepia(30%) saturate(249%) hue-rotate(349deg) brightness(84%) contrast(83%);
+}
+
 .insta-posts {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -141,6 +147,63 @@ img {
 
 
 /* how to */
+.how-to {
+    position: relative;
+    z-index: -2;
+}
 
+.search {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    width: 100px;
+    filter: invert(100%) sepia(1%) saturate(983%) hue-rotate(262deg) brightness(116%) contrast(100%);
+    z-index: -1;
+}
+
+.how-to-featured {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 12px 0;
+}
+
+.how-to-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    height: 120px;
+}
+
+.how-to-card img {
+    border-radius: 8px 0 0 0;
+    height: 100%;
+}
+
+.how-to-card h3 {
+    padding: 2px;
+}
 
 /* collabs */
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding: 40px;
+}
+
+.socials {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.instagram,
+.facebook {
+    width: 16px;
+    filter: invert(100%) sepia(1%) saturate(983%) hue-rotate(262deg) brightness(116%) contrast(100%);
+}
