@@ -93,6 +93,12 @@
 
 /* padding */
 
-.top-btm-pad {
-    padding: 16px 12px;
+.allround-pad {
+    padding: 12px;
+}
+
+/* justify */
+
+.justify-r {
+    justify-self: right;
 }
