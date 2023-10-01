@@ -1,4 +1,7 @@
-/* GLOBAL */
+@import url(imports/constants.css);
+@import url(imports/variables.css);
+@import url(components/header.css);
+@import url(components/footer.css);
 
 * {
     box-sizing: border-box;
@@ -68,44 +71,7 @@ img {
     overflow: hidden;
 }
 
-/* HEADER */
-
-header {
-    padding: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu-icon {
-    width: 30px;
-}
-
-/* FOOTER */
-footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 16px;
-    padding: 40px;
-}
-
-.socials {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-}
-
-.instagram,
-.facebook {
-    width: 16px;
-    filter: invert(100%) sepia(1%) saturate(983%) hue-rotate(262deg) brightness(116%) contrast(100%);
-}
-
 /* INDEX */
-
-/* new post */
-
 .new-post-img {
     display: grid;
     grid-template-rows: auto 180px;
@@ -132,6 +98,8 @@ footer {
     display: grid;
     grid-template-rows: auto 150px;
     min-width: 160px;
+    max-width: 250px;
+    width: 100%;
 }
 
 .featured-card img {
@@ -202,7 +170,7 @@ footer {
     z-index: -1;
 }
 
-.how-to-featured {
+.how-to-posts {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -227,6 +195,9 @@ footer {
 }
 
 /* collabs */
+.collabs h2 {
+    font-size: 5.6rem;
+}
 
 .collab-logos {
     display: grid;
@@ -236,43 +207,44 @@ footer {
         "cozy-earth cozy-earth cozy-earth amazon"
         "walmart walmart saatva saatva"
         "hm-home hm-home ellos ellos";
-    align-items: center;
     gap: 16px;
     padding: 24px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .cozy-earth {
     grid-area: cozy-earth;
-    width: 220px;
+    max-width: 220px;
     justify-self: start;
 }
 
 .amazon {
     grid-area: amazon;
-    width: 40px;
+    max-width: 40px;
     justify-self: end;
 }
 
 .walmart {
     grid-area: walmart;
-    width: 156px;
+    max-width: 156px;
     justify-self: start;
 }
 
 .saatva {
     grid-area: saatva;
-    width: 110px;
+    max-width: 110px;
     justify-self: end;
 }
 
 .hm-home {
     grid-area: hm-home;
-    width: 120px;
+    max-width: 120px;
     justify-self: start;
 }
 
 .ellos {
     grid-area: ellos;
-    width: 70px;
+    max-width: 70px;
     justify-self: end;
 }

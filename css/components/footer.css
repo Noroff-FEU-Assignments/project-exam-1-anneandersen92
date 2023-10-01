@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding: 40px;
+}
+
+.socials {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.instagram,
+.facebook {
+    width: 16px;
+    filter: invert(100%) sepia(1%) saturate(983%) hue-rotate(262deg) brightness(116%) contrast(100%);
+}
