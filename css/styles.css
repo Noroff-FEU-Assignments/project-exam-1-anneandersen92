@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    max-width: 100%;
 }
 
 body {
@@ -11,7 +10,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+.blog-name {
     font-family: var(--ff-heading);
     font-weight: var(--fw-300);
     line-height: 1.2;
@@ -20,7 +20,7 @@ h3 {
 h1 {
     font-size: var(--fs-h1);
     color: var(--clr-charcoal);
-    letter-spacing: var(--ls-6);
+    letter-spacing: var(--ls-3);
     text-transform: var(--tt-lower);
     margin-block: 32px;
 }
@@ -41,13 +41,20 @@ h3 {
     margin-block: 16px;
 }
 
-p {
+.blog-name {
+    font-size: var(--fs-h1);
+    color: var(--clr-charcoal);
+    letter-spacing: var(--ls-2);
+    margin-block: var(--mgn-zero);
+}
+
+p,
+.tagline {
     font-family: var(--ff-body);
     font-size: var(--fs-body);
     font-weight: var(--fw-300);
     color: var(--clr-charcoal);
     line-height: 1.6;
-    width: 750px;
     margin-block: var(--mgn-zero);
 }
 
@@ -59,6 +66,40 @@ img {
     width: 100%;
     object-fit: cover;
     overflow: hidden;
+}
+
+/* HEADER */
+
+header {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    width: 30px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding: 40px;
+}
+
+.socials {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.instagram,
+.facebook {
+    width: 16px;
+    filter: invert(100%) sepia(1%) saturate(983%) hue-rotate(262deg) brightness(116%) contrast(100%);
 }
 
 /* INDEX */
@@ -234,25 +275,4 @@ img {
     grid-area: ellos;
     width: 70px;
     justify-self: end;
-}
-
-/* footer */
-footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 16px;
-    padding: 40px;
-}
-
-.socials {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-}
-
-.instagram,
-.facebook {
-    width: 16px;
-    filter: invert(100%) sepia(1%) saturate(983%) hue-rotate(262deg) brightness(116%) contrast(100%);
 }
