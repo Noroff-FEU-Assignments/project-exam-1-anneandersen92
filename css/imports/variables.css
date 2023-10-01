@@ -27,6 +27,8 @@
 
     --fs-h1: 2.2rem;
     --fs-h2: 6rem;
+    --fs-h2-small: 5.2rem;
+    --fs-h2-xsmall: 4.6rem;
     --fs-h3: 1.4rem;
     --fs-body: 1rem;
     --fs-body-small: 0.8rem;
@@ -38,7 +40,7 @@
     --tt-lower: lowercase;
     --tt-cap: capitalize;
 
-    /*--ls-1: 1px;*/
+    --ls-1: 1px;
     --ls-2: 2px;
     --ls-3: 3px;
     /*--ls-4: 4px;*/

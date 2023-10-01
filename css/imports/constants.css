@@ -34,6 +34,10 @@
     font-size: var(--fs-h2);
 }
 
+.fs-h2-small {
+    font-size: var(--fs-h2-small);
+}
+
 .fs-h3 {
     font-size: var(--fs-h3);
 }

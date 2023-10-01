@@ -30,7 +30,7 @@ h1 {
 
 h2 {
     font-size: var(--fs-h2);
-    letter-spacing: var(--ls-3);
+    letter-spacing: var(--ls-2);
     text-transform: var(--tt-upper);
     text-align: center;
     margin-block: var(--mgn-zero);
@@ -39,7 +39,7 @@ h2 {
 h3 {
     font-size: var(--fs-h3);
     color: var(--clr-charcoal);
-    letter-spacing: var(--ls-2);
+    letter-spacing: var(--ls-1);
     text-transform: var(--tt-lower);
     margin-block: 16px;
 }
@@ -195,10 +195,6 @@ img {
 }
 
 /* collabs */
-.collabs h2 {
-    font-size: 5.6rem;
-}
-
 .collab-logos {
     display: grid;
     grid-template-columns: 1fr 1fr .5fr 1fr;
@@ -247,4 +243,17 @@ img {
     grid-area: ellos;
     max-width: 70px;
     justify-self: end;
+}
+
+@media only screen and (max-width: 370px) {
+    h2 {
+        font-size: var(--fs-h2-xsmall);
+        letter-spacing: 0;
+    }
+}
+
+@media only screen and (min-width: 371px) and (max-width: 420px) {
+    h2 {
+        font-size: var(--fs-h2-small);
+    }
 }
