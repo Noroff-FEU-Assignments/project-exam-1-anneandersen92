@@ -14,13 +14,22 @@
             <p class="blog-name">Oh Sheet !</p>
             <p class="tagline">Time to go to bed</p>
         </a>
-        <nav>
-            <img src="resources/icons/nav.svg" alt="menu" class="menu-icon">
-        </nav>
+        <div class="navigation">
+            <label for="nav-dots"><img src="resources/icons/nav.svg" alt="button to open and close the navigation" class="nav-btn"></label>
+            <input type="checkbox" id="nav-dots" />
+            <nav class="bg-medium-beige-90">
+                <div class="nav-items">
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About</a>
+                    <a href="index.html">Home</a>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="new-post">
-            <a href="blogpost.html" style="background-image: url(resources/images/blog_posts/0_the_egyptian.jpg);" class="new-post-img top-btm-pad">
+            <a href="blogpost.html" style="background-image: url(resources/images/blog_posts/0_the_egyptian.jpg);" alt="" class="new-post-img top-btm-pad">
                 <h2 class="text-white-80">New post</h2>
                 <h3 class="bg-light-beige rounded">The Egyptian</h3>
             </a>
@@ -57,11 +66,11 @@
         <section class="so-me bg-light-beige top-btm-pad">
             <h2 class="text-beige">We<img src="resources/icons/favorites_filled.svg" alt="decorative heart icon for love" class="heart">you</h2>
             <div class="insta-posts">
-                <img src="resources/images/shared/shared_1.png" class="post-1 rounded">
-                <img src="resources/images/shared/shared_2.png" class="post-2 rounded">
-                <img src="resources/images/shared/shared_3.png" class="post-3 rounded">
-                <img src="resources/images/shared/shared_4.png" class="post-4 rounded">
-                <img src="resources/images/shared/shared_5.png" class="post-5 rounded">
+                <img src="resources/images/shared/shared_1.png" alt="" class="post-1 rounded">
+                <img src="resources/images/shared/shared_2.png" alt="" class="post-2 rounded">
+                <img src="resources/images/shared/shared_3.png" alt="" class="post-3 rounded">
+                <img src="resources/images/shared/shared_4.png" alt="" class="post-4 rounded">
+                <img src="resources/images/shared/shared_5.png" alt="" class="post-5 rounded">
             </div>
             <p>Share your <span class="fw-medium">#ohsheet</span> moments on Instagram</p>
         </section>

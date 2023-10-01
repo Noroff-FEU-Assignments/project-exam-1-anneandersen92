@@ -13,8 +13,7 @@ body {
 
 h1,
 h2,
-h3,
-.blog-name {
+h3 {
     font-family: var(--ff-heading);
     font-weight: var(--fw-300);
     line-height: 1.2;
@@ -44,15 +43,7 @@ h3 {
     margin-block: 16px;
 }
 
-.blog-name {
-    font-size: var(--fs-h1);
-    color: var(--clr-charcoal);
-    letter-spacing: var(--ls-2);
-    margin-block: var(--mgn-zero);
-}
-
-p,
-.tagline {
+p {
     font-family: var(--ff-body);
     font-size: var(--fs-body);
     font-weight: var(--fw-300);
@@ -71,7 +62,7 @@ img {
     overflow: hidden;
 }
 
-/* INDEX */
+/* INDEX page */
 .new-post-img {
     display: grid;
     grid-template-rows: auto 180px;
@@ -86,7 +77,6 @@ img {
     align-self: center;
 }
 
-/* most read */
 .featured-slider {
     display: flex;
     overflow-x: scroll;
@@ -111,8 +101,6 @@ img {
     margin: 16px;
 }
 
-
-/* social media */
 .heart {
     width: 50pt;
     margin: 6px;
@@ -154,8 +142,6 @@ img {
     text-align: right;
 }
 
-
-/* how to */
 .how-to {
     position: relative;
     z-index: -2;
@@ -194,7 +180,6 @@ img {
     padding: 2px;
 }
 
-/* collabs */
 .collab-logos {
     display: grid;
     grid-template-columns: 1fr 1fr .5fr 1fr;
