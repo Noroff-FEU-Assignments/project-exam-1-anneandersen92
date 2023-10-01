@@ -93,8 +93,12 @@
 
 /* padding */
 
-.allround-pad {
+.pad-all {
     padding: 12px;
+}
+
+.pad-all-text {
+    padding: 16px;
 }
 
 /* justify */
