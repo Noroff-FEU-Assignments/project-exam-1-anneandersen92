@@ -23,8 +23,9 @@ h1 {
     font-size: var(--fs-h1);
     color: var(--clr-charcoal);
     letter-spacing: var(--ls-3);
+    text-align: center;
     text-transform: var(--tt-lower);
-    margin-block: 32px;
+    margin-block: 16px;
 }
 
 h2 {
@@ -40,10 +41,13 @@ h3 {
     color: var(--clr-charcoal);
     letter-spacing: var(--ls-1);
     text-transform: var(--tt-lower);
+    text-align: center;
     margin-block: 16px;
 }
 
-p {
+p,
+li,
+li a {
     font-family: var(--ff-body);
     font-size: var(--fs-body);
     font-weight: var(--fw-300);
@@ -69,13 +73,6 @@ img {
     padding-left: 24px;
     display: flex;
     gap: 4px;
-}
-
-.breadcrumb-items li,
-.breadcrumb-items a {
-    font-family: var(--ff-body);
-    font-size: var(--fs-body);
-    color: var(--clr-charcoal);
 }
 
 
@@ -278,7 +275,6 @@ img {
 
 .large-post h3 {
     width: 100%;
-    text-align: center;
     align-self: end;
     padding: 12px;
     margin-block: var(--mgn-zero);
@@ -305,7 +301,6 @@ img {
 .small-post h3 {
     width: 100%;
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
     padding: 8px;
@@ -320,3 +315,36 @@ img {
 
 
 /* blogpost page */
+.blogpost,
+.comment-section,
+.comment-form,
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.banner-img,
+.inner-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-img img {
+    max-height: 400px;
+}
+
+.inner-img img {
+    width: 50%;
+}
+
+.comment-form,
+.comment {
+    padding: 16px;
+    gap: 8px;
+}
+
+.comment-section .name {
+    margin-block: var(--mgn-zero);
+}

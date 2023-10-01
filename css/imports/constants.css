@@ -97,8 +97,12 @@
     padding: 12px;
 }
 
-.pad-all-text {
-    padding: 16px;
+.mgn-text {
+    margin: 24px 32px;
+}
+
+.mgn-text-small {
+    margin: 16px 24px;
 }
 
 /* justify */
