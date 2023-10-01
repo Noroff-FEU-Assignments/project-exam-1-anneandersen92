@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 body {
@@ -28,6 +29,7 @@ h2 {
     font-size: var(--fs-h2);
     letter-spacing: var(--ls-3);
     text-transform: var(--tt-upper);
+    text-align: center;
     margin-block: var(--mgn-zero);
 }
 
@@ -67,10 +69,8 @@ img {
     display: grid;
     grid-template-rows: auto 180px;
     justify-items: center;
-    text-align: center;
     background-size: cover;
     background-position: left;
-    padding: 8px;
 }
 
 .new-post-img h3 {
@@ -80,19 +80,22 @@ img {
 }
 
 /* most read */
-
 .featured-slider {
     display: flex;
     overflow-x: scroll;
     gap: 12px;
-    padding: 12px;
-    outline: none;
+    padding: 12px 0;
 }
 
 .blogpost-card {
     display: grid;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: auto 150px;
     min-width: 160px;
+}
+
+.blogpost-card img {
+    height: 100%;
+    object-position: 30% 0;
 }
 
 .blogpost-card h3 {
@@ -101,6 +104,40 @@ img {
 
 
 /* social media */
+.insta-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "post-1 post-2 post-5 post-5"
+        "post-3 post-4 post-5 post-5";
+    gap: 12px;
+    padding: 12px 0;
+}
+
+.post-1 {
+    grid-area: post-1;
+}
+
+.post-2 {
+    grid-area: post-2;
+}
+
+.post-3 {
+    grid-area: post-3;
+}
+
+.post-4 {
+    grid-area: post-4;
+}
+
+.post-5 {
+    grid-area: post-5;
+}
+
+.so-me p {
+    text-align: right;
+}
 
 
 /* how to */

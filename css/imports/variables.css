@@ -6,19 +6,19 @@
 :root {
     /* colors */
     --clr-light-beige: #f5f0ea;
-    /*--clr-light-beige-90: #f5f0ea90;*/
     --clr-medium-beige: #e5dcd2;
     --clr-medium-beige-90: #e5dcd290;
     --clr-dark-beige: #baa48e;
 
     --clr-light-green: #e9f2e4;
-    /*--clr-medium-green: #cce8be;*/
     --clr-dark-green: #acd09a;
 
     --clr-white: #ffffff;
     --clr-white-80: #ffffff80;
     --clr-charcoal: #333333;
 
+    /*--clr-light-beige-90: #f5f0ea90;*/
+    /*--clr-medium-green: #cce8be;*/
 
     /* typography */
     --ff-heading: Popstick;
@@ -26,7 +26,7 @@
     ;
 
     --fs-h1: 2.5rem;
-    --fs-h2: 7rem;
+    --fs-h2: 6rem;
     --fs-h3: 1.4rem;
     --fs-body: 1rem;
     --fs-body-small: 0.8rem;
