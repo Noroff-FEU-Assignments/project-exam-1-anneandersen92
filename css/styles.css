@@ -187,6 +187,55 @@ img {
 
 /* collabs */
 
+.collab-logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "cozy-earth cozy-earth cozy-earth amazon"
+        "walmart walmart saatva saatva"
+        "hm-home hm-home ellos ellos";
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+}
+
+.cozy-earth {
+    grid-area: cozy-earth;
+    width: 220px;
+    justify-self: start;
+}
+
+.amazon {
+    grid-area: amazon;
+    width: 40px;
+    justify-self: end;
+}
+
+.walmart {
+    grid-area: walmart;
+    width: 156px;
+    justify-self: start;
+}
+
+.saatva {
+    grid-area: saatva;
+    width: 110px;
+    justify-self: end;
+}
+
+.hm-home {
+    grid-area: hm-home;
+    width: 120px;
+    justify-self: start;
+}
+
+.ellos {
+    grid-area: ellos;
+    width: 70px;
+    justify-self: end;
+}
+
 /* footer */
 footer {
     display: flex;
