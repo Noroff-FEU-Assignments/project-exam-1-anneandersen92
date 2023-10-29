@@ -63,10 +63,6 @@
     background-color: var(--clr-light-beige);
 }
 
-.bg-medium-beige {
-    background-color: var(--clr-medium-beige);
-}
-
 .bg-medium-beige-90 {
     background-color: var(--clr-medium-beige-90);
 }

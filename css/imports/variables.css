@@ -5,20 +5,20 @@
 
 :root {
     /* colors */
-    --clr-light-beige: #f5f0ea;
-    --clr-medium-beige: #e5dcd2;
-    --clr-medium-beige-90: #e5dcd290;
-    --clr-dark-beige: #baa48e;
+    --clr-light-beige: #f8efde;
+    --clr-medium-beige-90: #caba9b90;
+    --clr-dark-beige: #b1a387;
 
-    --clr-light-green: #e9f2e4;
-    --clr-dark-green: #acd09a;
+    --clr-light-green: #e6e9ce;
+    --clr-dark-green: #95a16f;
 
     --clr-white: #ffffff;
     --clr-white-80: #ffffff80;
     --clr-charcoal: #333333;
 
     /*--clr-light-beige-90: #f5f0ea90;*/
-    /*--clr-medium-green: #cce8be;*/
+    /*--clr-medium-beige: #e5dcd2;*/
+    /*--clr-medium-green: #B3D2A5;*/
 
     /* typography */
     --ff-heading: Popstick;
