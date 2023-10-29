@@ -18,7 +18,7 @@
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
   </head>
-  <body class="img-modal">
+  <body>
     <header></header>
     <main>
         <section class="breadcrumb-nav">
@@ -29,14 +29,31 @@
         </section>
         <section class="contact">
             <div class="banner-img">
-                <img src="resources/images/blog_posts/6_how_to_mix_and_match_bedding.jpg" alt="">
+                <img src="resources/images/blog_posts/6_how_to_mix_and_match_bedding_inner.jpg" alt="">
             </div>
             <div>
                 <h1>Contact me !</h1>
             </div>
-            <div class="contact-form">
-                <form></form>
-            </div>
+            <form class="contact-form bg-light-beige">
+                <div>
+                    <input type="text" id="name" placeholder="Name" class="rounded" />
+                    <div class="form-error" id="name-error"><p>Must contain at least 5 characters</p></div>
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder="Email" class="rounded" />
+                    <div class="form-error" id="email-error"><p>Please enter a valid email</p></div>
+                </div>
+                <div>
+                    <input type="text" id="subject" placeholder="Subject" class="rounded" />
+                    <div class="form-error" id="subject-error"><p>Must contain at least 10 characters</p></div>
+                </div>
+                <div>
+                    <textarea id="message" placeholder="Message" rows="4" class="rounded"></textarea>
+                    <div class="form-error" id="message-error"><p>Must contain at least 25 characters</p></div>
+                </div>
+                <button disabled class="submit-btn rounded">Submit</button>
+            </form>
+            <div id="response-message"></div>
         </section>
     </main>
     <footer></footer>

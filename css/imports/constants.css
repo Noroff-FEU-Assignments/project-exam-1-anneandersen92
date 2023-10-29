@@ -1,7 +1,5 @@
 @import url(./variables.css);
 
-
-/* text */
 .text-charcoal {
     color: var(--clr-charcoal);
 }
@@ -26,22 +24,6 @@
     font-size: var(--fs-body-small);
 }
 
-.fs-h1 {
-    font-size: var(--fs-h1);
-}
-
-.fs-h2 {
-    font-size: var(--fs-h2);
-}
-
-.fs-h2-small {
-    font-size: var(--fs-h2-small);
-}
-
-.fs-h3 {
-    font-size: var(--fs-h3);
-}
-
 .fw-medium {
     font-weight: var(--fw-500);
 }
@@ -58,7 +40,6 @@
     text-transform: var(--tt-cap);
 }
 
-/* background */
 .bg-light-beige {
     background-color: var(--clr-light-beige);
 }
@@ -87,8 +68,6 @@
     border-radius: 8px 0;
 }
 
-/* padding */
-
 .pad-all {
     padding: 12px;
 }
@@ -100,8 +79,6 @@
 .mgn-text-small {
     margin: 16px 24px;
 }
-
-/* justify */
 
 .justify-r {
     justify-self: right;

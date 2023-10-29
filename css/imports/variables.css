@@ -26,10 +26,17 @@
     ;
 
     --fs-h1: 2.2rem;
+    --fs-h1-pc: 3rem;
+
     --fs-h2: 6rem;
+    --fs-h2-pc: 7rem;
+
     --fs-h2-small: 5.2rem;
     --fs-h2-xsmall: 4.6rem;
+
     --fs-h3: 1.4rem;
+    --fs-h3-pc: 1.8rem;
+
     --fs-body: 1rem;
     --fs-body-small: 0.8rem;
 
