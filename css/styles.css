@@ -507,6 +507,12 @@ form button:disabled {
 
 @media only screen and (min-width: 1200px) {
 
+    p,
+    li,
+    li a {
+        font-size: var(--fs-body-pc);
+    }
+
     main,
     .header-content,
     .footer-content {
