@@ -1,10 +1,13 @@
 footer {
+    margin-top: 40px;
+}
+
+.footer-content {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 16px;
     padding: 40px;
-    margin-top: 40px;
 }
 
 .socials {
