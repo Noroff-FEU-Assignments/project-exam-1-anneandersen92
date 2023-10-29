@@ -5,12 +5,12 @@
 
 :root {
     /* colors */
-    --clr-light-beige: #f8efde;
-    --clr-medium-beige-90: #caba9b90;
-    --clr-dark-beige: #b1a387;
+    --clr-light-beige: #f2ece5;
+    --clr-medium-beige-90: #d3c5b590;
+    --clr-dark-beige: #b2a393;
 
-    --clr-light-green: #e6e9ce;
-    --clr-dark-green: #95a16f;
+    --clr-light-green: #dee3d3;
+    --clr-dark-green: #849163;
 
     --clr-white: #ffffff;
     --clr-white-80: #ffffff80;
@@ -18,7 +18,7 @@
 
     /*--clr-light-beige-90: #f5f0ea90;*/
     /*--clr-medium-beige: #e5dcd2;*/
-    /*--clr-medium-green: #B3D2A5;*/
+    /*--clr-medium-green: #b0be90;*/
 
     /* typography */
     --ff-heading: Popstick;
