@@ -1,6 +1,6 @@
+import { url } from "./apiUrl.js";
 import { displayError } from "../components/errorMessage.js";
 
-const url = "https://annesflower.no/ohsheet/wp-json/wp/v2/posts/";
 const largePosts = document.querySelector(".large-posts");
 const smallPosts = document.querySelector(".small-posts");
 const btnShowMore = document.querySelector(".show-more-btn");
@@ -33,7 +33,7 @@ async function fetchBlog() {
         };
 
         function largePostsHtml(post) {
-            largePosts.innerHTML += `<a href="blogpost.html?id=${post.id}" style="background-image: url(${post._embedded["wp:featuredmedia"][0].source_url});" alt="${post._embedded["wp:featuredmedia"][0].alt_text}" class="small-post pad-all rounded">
+            largePosts.innerHTML += `<a href="blogpost.html?id=${post.id}" style="background-image: url(${post._embedded["wp:featuredmedia"][0].source_url});" alt="${post._embedded["wp:featuredmedia"][0].alt_text}" class="large-post pad-all rounded">
                                             <h2 class="text-white-80 justify-r">Post</h2>
                                             <h3 class="bg-light-beige rounded">${post.title.rendered}</h3>
                                     </a>`;
