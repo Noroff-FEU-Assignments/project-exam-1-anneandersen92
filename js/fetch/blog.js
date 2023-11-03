@@ -1,12 +1,20 @@
 import { displayError } from "../components/errorMessage.js";
 
 const url = "https://annesflower.no/ohsheet/wp-json/wp/v2/posts/";
-const completeUrl = url + "?_embed&per_page=100";
-
 const largePosts = document.querySelector(".large-posts");
 const smallPosts = document.querySelector(".small-posts");
+const btnShowMore = document.querySelector(".show-more-btn");
+
+let perPage = 10;
+
+btnShowMore.addEventListener("click", () => {
+    perPage += 10;
+    fetchBlog();
+});
 
 async function fetchBlog() {
+    const completeUrl = url + "?_embed&" + `per_page=${perPage}`;
+
     try {
         const response = await fetch(completeUrl);
         const blog = await response.json();
@@ -17,7 +25,7 @@ async function fetchBlog() {
 
             const post = blog[i];
 
-            if (largePosts && (i === 3)) {
+            if (largePosts && (i === 2)) {
                 break;
             }
 
@@ -33,7 +41,7 @@ async function fetchBlog() {
 
         smallPosts.innerHTML = "";
 
-        for (let i = 3; i < blog.length; i++) {
+        for (let i = 2; i < blog.length; i++) {
 
             const post = blog[i];
 
@@ -47,6 +55,10 @@ async function fetchBlog() {
                                     </a>`;
         };
 
+        if (blog.length < perPage === true) {
+            btnShowMore.remove();
+        }
+
     } catch (error) {
         largePosts.innerHTML = displayError("An error occured when calling the API");
         smallPosts.innerHTML = displayError("An error occured when calling the API");
@@ -54,3 +66,4 @@ async function fetchBlog() {
 }
 
 fetchBlog();
+
