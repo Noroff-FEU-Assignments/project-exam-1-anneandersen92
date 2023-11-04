@@ -5,7 +5,7 @@ const newPost = document.querySelector(".newest-post");
 const mostReadPosts = document.querySelector(".featured-slider");
 const howToPosts = document.querySelector(".how-to-posts");
 
-async function fetchHowTo() {
+async function fetchIndex() {
     const completeUrl = url + "?_embed&per_page=100";
 
     try {
@@ -64,6 +64,6 @@ async function fetchHowTo() {
     } catch (error) {
         howToPosts.innerHTML = displayError("An error occured when calling the API");
     };
-}
+};
 
-fetchHowTo();
+fetchIndex();

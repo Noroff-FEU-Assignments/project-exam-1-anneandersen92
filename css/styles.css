@@ -501,6 +501,18 @@ textarea {
         margin: 0 auto;
     }
 
+    .featured-slider {
+        gap: 16px;
+    }
+
+    .featured-card {
+        min-width: 190px;
+    }
+
+    .how-to-card {
+        height: 160px;
+    }
+
     .banner-img img {
         min-height: 400px;
         max-height: 500px;
@@ -530,6 +542,14 @@ textarea {
     .header-content,
     .footer-content {
         max-width: 1000px;
+    }
+
+    .featured-card {
+        min-width: 220px;
+    }
+
+    .how-to-card {
+        height: 200px;
     }
 
     .banner-img img {
