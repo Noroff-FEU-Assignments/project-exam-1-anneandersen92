@@ -20,19 +20,20 @@ async function fetchBlog() {
         const blog = await response.json();
 
         largePosts.innerHTML = "";
+        smallPosts.innerHTML = "";
 
         for (let i = 0; i < blog.length; i++) {
 
             const post = blog[i];
 
-            if (largePosts && (i === 2)) {
-                break;
+            if (i <= 1) {
+                createLargePostsHtml(post);
+            } else if (i >= 2) {
+                createSmallPostsHtml(post);
             }
-
-            createHtmlL(post);
         };
 
-        function createHtmlL(post) {
+        function createLargePostsHtml(post) {
             largePosts.innerHTML += `
             <a href="blogpost.html?id=${post.id}" style="background-image: url(${post._embedded["wp:featuredmedia"][0].source_url}) " alt="${post._embedded["wp:featuredmedia"][0].alt_text}" class="large-post pad-all rounded">
                     <h2 class="text-white-80 justify-r">Post</h2>
@@ -40,16 +41,7 @@ async function fetchBlog() {
             </a>`;
         };
 
-        smallPosts.innerHTML = "";
-
-        for (let i = 2; i < blog.length; i++) {
-
-            const post = blog[i];
-
-            createHtmlS(post);
-        };
-
-        function createHtmlS(post) {
+        function createSmallPostsHtml(post) {
             smallPosts.innerHTML += `
             <a href="blogpost.html?id=${post.id}" style="background-image: url(${post._embedded["wp:featuredmedia"][0].source_url})" alt="${post._embedded["wp:featuredmedia"][0].alt_text}" class="small-post pad-all rounded">
                     <h2 class="text-white-80 justify-r">Post</h2>
