@@ -20,13 +20,21 @@ async function fetchHowTo() {
 
             const post = blog[i];
 
-            if (i === 0) {
+            const newTag = 5;
+            const mostReadTag = 13;
+            const howToCategory = 11;
+
+            if (post.tags[1] === newTag) {
                 createNewPostHtml(post);
-            } else if (post.categories[0] !== 11) {
+            };
+
+            if (post.tags[0] === mostReadTag) {
                 createMostReadHtml(post);
-            } else if (post.categories[0] === 11) {
+            };
+
+            if (post.categories[0] === howToCategory) {
                 createHowToHtml(post);
-            }
+            };
         };
 
         function createNewPostHtml(post) {
@@ -55,7 +63,7 @@ async function fetchHowTo() {
 
     } catch (error) {
         howToPosts.innerHTML = displayError("An error occured when calling the API");
-    }
+    };
 }
 
 fetchHowTo();

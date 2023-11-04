@@ -30,7 +30,7 @@ async function fetchBlog() {
                 createLargePostsHtml(post);
             } else if (i >= 2) {
                 createSmallPostsHtml(post);
-            }
+            };
         };
 
         function createLargePostsHtml(post) {
@@ -51,13 +51,13 @@ async function fetchBlog() {
 
         if (blog.length < perPage === true) {
             btnShowMore.remove();
-        }
+        };
 
     } catch (error) {
         largePosts.innerHTML = displayError("An error occured when calling the API");
         smallPosts.innerHTML = displayError("An error occured when calling the API");
-    }
-}
+    };
+};
 
 fetchBlog();
 

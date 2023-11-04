@@ -17,33 +17,33 @@ function validateForm(event) {
         nameError.style.display = "none";
     } else {
         nameError.style.display = "block";
-    }
+    };
 
     if (validateEmail(email.value)) {
         emailError.style.display = "none";
     } else {
         emailError.style.display = "block";
-    }
+    };
 
     if (checkLength(subject.value, 15)) {
         subjectError.style.display = "none";
     } else {
         subjectError.style.display = "block";
-    }
+    };
 
     if (checkLength(message.value, 25)) {
         messageError.style.display = "none";
     } else {
         messageError.style.display = "block";
-    }
-}
+    };
+};
 
 function checkLength(value, len) {
     if (value.trim().length >= len) {
         return true;
     } else {
         return false;
-    }
+    };
 };
 
 function validateEmail(email) {
@@ -59,7 +59,7 @@ export function checkButton(event) {
         formButton.disabled = false;
     } else {
         formButton.disabled = true;
-    }
+    };
 };
 
 export function submitForm(event) {
@@ -68,7 +68,7 @@ export function submitForm(event) {
     if (checkLength(name.value, 5) && validateEmail(email.value) && checkLength(subject.value, 15) && checkLength(message.value, 25)) {
         responseMessage.innerHTML = '<div class="response-message rounded"><p class="fw-medium">Thank you !</p><p>I will get back to you as soon as possible</p></div>';
         form.reset();
-    }
+    };
 };
 
 form.addEventListener("keyup", validateForm);
