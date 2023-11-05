@@ -455,10 +455,6 @@ textarea {
 /* media */
 
 @media only screen and (max-width: 369px) {
-    .bread-full {
-        display: none;
-    }
-
     h2 {
         font-size: var(--fs-h2-xsmall);
         letter-spacing: 0;
@@ -466,14 +462,6 @@ textarea {
 }
 
 @media only screen and (min-width: 370px) {
-    .bread-full {
-        display: inline;
-    }
-
-    .bread-short {
-        display: none;
-    }
-
     h2 {
         font-size: var(--fs-h2-small);
     }
