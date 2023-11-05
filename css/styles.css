@@ -102,22 +102,22 @@ button:disabled {
 
 
 /* index page */
-.newest-post .new-post h2 {
-    padding-bottom: 100px;
-}
-
 .newest-post .new-post h3 {
     width: auto;
-    max-width: 300px;
+    max-width: 500px;
     padding: 16px 48px;
     align-self: center;
+}
+
+.most-read {
+    padding: 12px 0;
 }
 
 .featured-slider {
     display: flex;
     overflow-x: scroll;
     gap: 12px;
-    padding: 12px 0;
+    padding: 12px;
 }
 
 .featured-card {
@@ -224,6 +224,10 @@ button:disabled {
     padding: 2px;
 }
 
+.collabs {
+    margin-bottom: -40px;
+}
+
 .collab-logos {
     display: grid;
     grid-template-columns: 1fr 1fr .5fr 1fr;
@@ -234,8 +238,9 @@ button:disabled {
         "hm-home hm-home ellos ellos";
     gap: 16px;
     padding: 24px;
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
+    align-items: center;
 }
 
 .cozy-earth {
@@ -481,7 +486,6 @@ textarea {
 }
 
 @media only screen and (min-width: 768px) {
-
     h1 {
         font-size: var(--fs-h1-pc);
     }
@@ -501,8 +505,8 @@ textarea {
         margin: 0 auto;
     }
 
-    .featured-slider {
-        gap: 16px;
+    .newest-post .new-post h3 {
+        max-width: 800px;
     }
 
     .featured-card {
@@ -511,6 +515,40 @@ textarea {
 
     .how-to-card {
         height: 160px;
+    }
+
+    .collab-logos {
+        max-width: 500px;
+    }
+
+    .cozy-earth {
+        width: 270px;
+        max-width: none;
+    }
+
+    .amazon {
+        width: 50px;
+        max-width: none;
+    }
+
+    .walmart {
+        width: 190px;
+        max-width: none;
+    }
+
+    .saatva {
+        width: 135px;
+        max-width: none;
+    }
+
+    .hm-home {
+        width: 145px;
+        max-width: none;
+    }
+
+    .ellos {
+        width: 85px;
+        max-width: none;
     }
 
     .banner-img img {
@@ -544,12 +582,49 @@ textarea {
         max-width: 1000px;
     }
 
+    .most-read {
+        padding: 16px 0;
+    }
+
+    .featured-slider {
+        padding: 12px 16px;
+        gap: 16px;
+    }
+
     .featured-card {
         min-width: 220px;
     }
 
     .how-to-card {
         height: 200px;
+    }
+
+    .collab-logos {
+        max-width: 550px;
+    }
+
+    .cozy-earth {
+        width: 320px;
+    }
+
+    .amazon {
+        width: 60px;
+    }
+
+    .walmart {
+        width: 190px;
+    }
+
+    .saatva {
+        width: 160px;
+    }
+
+    .hm-home {
+        width: 175px;
+    }
+
+    .ellos {
+        width: 100px;
     }
 
     .banner-img img {

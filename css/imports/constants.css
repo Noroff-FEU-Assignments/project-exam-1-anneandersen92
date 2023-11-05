@@ -72,6 +72,12 @@
     padding: 12px;
 }
 
+@media only screen and (min-width: 1200px) {
+    .pad-all {
+        padding: 16px;
+    }
+}
+
 .mgn-text {
     margin: 24px 32px;
 }
