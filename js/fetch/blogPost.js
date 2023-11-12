@@ -2,12 +2,9 @@ import { url } from "./apiUrl.js";
 import { displayError } from "../components/errorMessage.js";
 
 const blogpost = document.querySelector(".blogpost");
-
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-
-
 
 let perPage = 100;
 
@@ -17,8 +14,6 @@ async function fetchProductDetails() {
     try {
         const response = await fetch(completeUrl);
         const details = await response.json();
-
-        console.log(details.title.rendered);
 
         blogpost.innerHTML = "";
 
@@ -30,38 +25,49 @@ async function fetchProductDetails() {
 }
 
 function createBlogpostHtml(details) {
-    blogpost.innerHTML = "Hello";
-    // `
-    // <div class="banner-img">
-    //     <img src="${details._embedded["wp:featuredmedia"][0].source_url}" alt="${details._embedded["wp:featuredmedia"][0].alt_text}">
-    // </div>
-    // <div>
-    //     <h1>${post.title.rendered}</h1>
-    // </div>
-    // <div class="bg-light-beige">
-    //     <p class="mgn-text">Text</p>
-    //     <p class="mgn-text">Text</p>
-    //     <p class="mgn-text">Text</p>
-    // </div>
-    // <div class="inner-img">
-    //     <img src="${details._embedded["wp:featuredmedia"][0].source_url}" alt="${details._embedded["wp:featuredmedia"][0].alt_text}">
-    // </div>
-    // <div class="bg-light-beige">
-    //     <p class="mgn-text">Text</p>
-    //     <p class="mgn-text">Text</p>
-    //     <ul class="mgn-text">
-    //         <li>...</li>
-    //         <li>...</li>
-    //         <li>...</li>
-    //     </ul>
-    //     <p class="mgn-text">Text</p>
-    //     <p class="mgn-text">Text</p>
-    // </div>`;
-
     const current = document.querySelector(".current");
-
     current.innerHTML = `${details.title.rendered}`;
     document.title = `OH Sheet ! | ${details.title.rendered}`;
+
+    blogpost.innerHTML += `
+        <div class="banner-img">
+            <img class="post-img" src="${details._embedded["wp:featuredmedia"][0].source_url}" alt="${details._embedded["wp:featuredmedia"][0].alt_text}">
+        </div>
+        <div>
+            <h1>${details.title.rendered}</h1>
+        </div>
+        <div>
+            ${details.content.rendered}
+        </div>`;
+
+    let innerImg = document.querySelector(".inner-img img");
+    innerImg.setAttribute("class", "post-img");
+    const images = document.querySelectorAll(".img-modal .post-img");
+    let imgSrc;
+
+    images.forEach((img) => {
+        img.addEventListener("click", (e) => {
+            imgSrc = e.target.src;
+            imgModal(imgSrc);
+        });
+    });
+
+    let imgModal = (src) => {
+        const modal = document.createElement("div");
+        modal.setAttribute("class", "modal");
+        document.querySelector(".img-modal").append(modal);
+        const newImage = document.createElement("img");
+        newImage.setAttribute("src", src);
+
+        const closeBtn = document.createElement("img");
+        closeBtn.src = "resources/icons/cross-small.svg";
+        closeBtn.setAttribute("class", "close-btn")
+        closeBtn.onclick = () => {
+            modal.remove();
+        };
+
+        modal.append(newImage, closeBtn);
+    };
 }
 
 fetchProductDetails();

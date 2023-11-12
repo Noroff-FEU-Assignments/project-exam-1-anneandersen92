@@ -39,26 +39,26 @@ async function fetchIndex() {
 
         function createNewPostHtml(post) {
             newPost.innerHTML += `
-            <a href="blogpost.html?id=${post.id}" style="background-image: url(${post._embedded["wp:featuredmedia"][0].source_url})" alt="${post._embedded["wp:featuredmedia"][0].alt_text}" class="large-post new-post pad-all">
-                <h2 class="text-white-80">New post</h2>
-                <h3 class=" bg-light-beige rounded">${post.title.rendered}</h3>
-            </a>`;
+                <a href="blogpost.html?id=${post.id}" style="background-image: url(${post._embedded["wp:featuredmedia"][0].source_url})" alt="${post._embedded["wp:featuredmedia"][0].alt_text}" class="large-post new-post pad-all">
+                    <h2 class="text-white-80">New post</h2>
+                    <h3 class=" bg-light-beige rounded">${post.title.rendered}</h3>
+                </a>`;
         };
 
         function createMostReadHtml(post) {
             mostReadPosts.innerHTML += `
-            <a href="blogpost.html?id=${post.id}" class="featured-card">
-            <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="${post._embedded["wp:featuredmedia"][0].alt_text}">
-                <h3 class="bg-dark-green"">${post.title.rendered}</h3>
-            </a>`;
+                <a href="blogpost.html?id=${post.id}" class="featured-card">
+                <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="${post._embedded["wp:featuredmedia"][0].alt_text}">
+                    <h3 class="bg-dark-green"">${post.title.rendered}</h3>
+                </a>`;
         };
 
         function createHowToHtml(post) {
             howToPosts.innerHTML += `
-            <a href="blogpost.html?id=${post.id}" class="how-to-card bg-dark-green rounded">
-                <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="${post._embedded["wp:featuredmedia"][0].alt_text}">
-                <h3>${post.title.rendered}</h3>
-            </a>`;
+                <a href="blogpost.html?id=${post.id}" class="how-to-card bg-dark-green rounded">
+                    <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="${post._embedded["wp:featuredmedia"][0].alt_text}">
+                    <h3>${post.title.rendered}</h3>
+                </a>`;
         };
 
     } catch (error) {
