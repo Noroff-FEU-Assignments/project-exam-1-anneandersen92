@@ -42,7 +42,7 @@ function createBlogpostHtml(details) {
 
     let innerImg = document.querySelector(".inner-img img");
     innerImg.setAttribute("class", "post-img");
-    const images = document.querySelectorAll(".img-modal .post-img");
+    const images = document.querySelectorAll(".blogpost .post-img");
     let imgSrc;
 
     images.forEach((img) => {
@@ -55,18 +55,18 @@ function createBlogpostHtml(details) {
     let imgModal = (src) => {
         const modal = document.createElement("div");
         modal.setAttribute("class", "modal");
-        document.querySelector(".img-modal").append(modal);
+        document.querySelector(".blogpost").append(modal);
         const newImage = document.createElement("img");
         newImage.setAttribute("src", src);
 
-        const closeBtn = document.createElement("img");
-        closeBtn.src = "resources/icons/cross-small.svg";
-        closeBtn.setAttribute("class", "close-btn")
-        closeBtn.onclick = () => {
-            modal.remove();
-        };
+        // const closeBtn = document.createElement("img");
+        // closeBtn.src = "resources/icons/cross-small.svg";
+        // closeBtn.setAttribute("class", "close-btn")
+        // closeBtn.onclick = () => {
+        //     modal.remove();
+        // };
 
-        modal.append(newImage, closeBtn);
+        modal.append(newImage);
     };
 }
 

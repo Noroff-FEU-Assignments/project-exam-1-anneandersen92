@@ -360,6 +360,7 @@ button:disabled {
     height: 100%;
     position: fixed;
     top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -381,6 +382,7 @@ button:disabled {
 .modal img {
     max-height: 85%;
     max-width: 85%;
+    width: auto;
     object-fit: contain;
 }
 
