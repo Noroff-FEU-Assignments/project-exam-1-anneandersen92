@@ -56,3 +56,20 @@ label[for=nav-dots]:hover {
     letter-spacing: var(--ls-3);
     text-transform: var(--tt-lower);
 }
+
+/* media */
+
+@media only screen and (min-width: 768px) {
+    .blog-name {
+        font-size: var(--fs-h1-pc);
+        line-height: 1.2;
+    }
+
+    .tagline {
+        font-size: var(--fs-body-pc);
+    }
+
+    .nav-btn {
+        width: 40px;
+    }
+}
