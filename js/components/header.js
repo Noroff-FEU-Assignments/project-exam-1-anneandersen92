@@ -18,7 +18,7 @@ export function createHeader() {
                 <p class="tagline" aria-label="tagline">Time to go to bed</p>
             </a>
             <div class="navigation">
-                <label for="nav-dots"><img src="resources/icons/nav.svg" alt="button to open and close the navigation" class="nav-btn"></label>
+                <label for="nav-dots"><img src="resources/icons/nav.svg" aria-label="button to open and close the navigation" class="nav-btn"></label>
                 <input type="checkbox" id="nav-dots" />
                 <nav class="bg-medium-beige-90">
                     <div class="nav-items">

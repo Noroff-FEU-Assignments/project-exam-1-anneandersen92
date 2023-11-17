@@ -18,8 +18,8 @@ export function createFooter() {
             <p><a href="about.html" class="fs-body-small fw-medium text-ecru">About</a></p>
             <p class="fs-body-small fw-medium text-ecru">#ohsheet</p>
             <div class="socials">
-                <img src="resources/icons/instagram.svg" alt="instagram logo" class="instagram">
-                <img src="resources/icons/facebook.svg" alt="facebook logo" class="facebook">
+                <img src="resources/icons/instagram.svg" aria-label="instagram logo" class="instagram">
+                <img src="resources/icons/facebook.svg" aria-label="facebook logo" class="facebook">
             </div>
         </div>`;
 };
