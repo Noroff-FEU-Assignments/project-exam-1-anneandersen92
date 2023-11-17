@@ -36,7 +36,7 @@ async function fetchBlog() {
         function createLargePostsHtml(post) {
             largePosts.innerHTML += `
                 <a href="blogpost.html?id=${post.id}" style="background-image: url(${post._embedded["wp:featuredmedia"][0].source_url}) " alt="${post._embedded["wp:featuredmedia"][0].alt_text}" class="large-post pad-all rounded">
-                        <h2 class="text-white-80 justify-r">Post</h2>
+                        <h2 class="text-ecru-80 justify-r">Post</h2>
                         <h3 class="bg-light-beige rounded">${post.title.rendered}</h3>
                 </a>`;
         };
@@ -44,7 +44,7 @@ async function fetchBlog() {
         function createSmallPostsHtml(post) {
             smallPosts.innerHTML += `
                 <a href="blogpost.html?id=${post.id}" style="background-image: url(${post._embedded["wp:featuredmedia"][0].source_url})" alt="${post._embedded["wp:featuredmedia"][0].alt_text}" class="small-post pad-all rounded">
-                        <h2 class="text-white-80 justify-r">Post</h2>
+                        <h2 class="text-ecru-80 justify-r">Post</h2>
                         <h3 class="bg-light-beige rounded">${post.title.rendered}</h3>
                 </a>`;
         };

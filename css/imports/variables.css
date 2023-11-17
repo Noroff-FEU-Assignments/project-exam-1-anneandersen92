@@ -5,18 +5,10 @@
 
 :root {
     /* colors */
-    --clr-light-beige: rgb(238, 233, 225);
-    /**/
-    --clr-medium-beige-90: #d3c5b590;
-    /*nothing done*/
-    --clr-dark-beige: #6D5A44;
-    /*same as dark-green, edit to dark-brown*/
-
-    --clr-light-brown: #c9baa6;
-    /*edit to light-brown*/
+    --clr-light-beige: #EDE8E1;
+    --clr-medium-beige-90: #C7BFB590;
+    --clr-light-brown: #C9BAA6;
     --clr-dark-brown: #6D5A44;
-    /*same as dark-beige, edit to dark-brown*/
-
     --clr-ecru: #EDE8D9;
     --clr-ecru-80: #EDE8D980;
     --clr-charcoal: #333333;

@@ -13,10 +13,10 @@ export function createFooter() {
 
     footer.innerHTML = footer.innerHTML = `
         <div class="footer-content">
-            <p><a href="blog.html" class="fs-body-small fw-medium text-white">Blog</a></p>
-            <p><a href="contact.html" class="fs-body-small fw-medium text-white">Contact</a></p>
-            <p><a href="about.html" class="fs-body-small fw-medium text-white">About</a></p>
-            <p class="fs-body-small fw-medium text-white">#ohsheet</p>
+            <p><a href="blog.html" class="fs-body-small fw-medium text-ecru">Blog</a></p>
+            <p><a href="contact.html" class="fs-body-small fw-medium text-ecru">Contact</a></p>
+            <p><a href="about.html" class="fs-body-small fw-medium text-ecru">About</a></p>
+            <p class="fs-body-small fw-medium text-ecru">#ohsheet</p>
             <div class="socials">
                 <img src="resources/icons/instagram.svg" alt="instagram logo" class="instagram">
                 <img src="resources/icons/facebook.svg" alt="facebook logo" class="facebook">
