@@ -29,6 +29,8 @@ function createBlogpostHtml(details) {
     current.innerHTML = `${details.title.rendered}`;
     document.title = `OH Sheet ! | ${details.title.rendered}`;
 
+    document.getElementsByTagName('meta')["description"].content = `${details.excerpt.rendered}`;
+
     blogpost.innerHTML += `
         <div class="banner-img">
             <img class="post-img" src="${details._embedded["wp:featuredmedia"][0].source_url}" alt="${details._embedded["wp:featuredmedia"][0].alt_text}">
