@@ -61,12 +61,11 @@ function createBlogpostHtml(details) {
         const newImage = document.createElement("img");
         newImage.setAttribute("src", src);
 
-        // const closeBtn = document.createElement("img");
-        // closeBtn.src = "resources/icons/cross-small.svg";
-        // closeBtn.setAttribute("class", "close-btn")
-        // closeBtn.onclick = () => {
-        //     modal.remove();
-        // };
+        modal.addEventListener("click", function () {
+            if (newImage !== event.target) {
+                modal.remove();
+            }
+        });
 
         modal.append(newImage);
     };
