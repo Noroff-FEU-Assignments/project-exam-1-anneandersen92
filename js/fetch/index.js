@@ -49,7 +49,7 @@ async function fetchIndex() {
             mostReadPosts.innerHTML += `
                 <a href="blogpost.html?id=${post.id}" class="featured-card">
                 <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="${post._embedded["wp:featuredmedia"][0].alt_text}">
-                    <h3 class="bg-dark-green"">${post.title.rendered}</h3>
+                    <h3 class="bg-dark-green text-white">${post.title.rendered}</h3>
                 </a>`;
         };
 
@@ -57,7 +57,7 @@ async function fetchIndex() {
             howToPosts.innerHTML += `
                 <a href="blogpost.html?id=${post.id}" class="how-to-card bg-dark-green rounded">
                     <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="${post._embedded["wp:featuredmedia"][0].alt_text}">
-                    <h3>${post.title.rendered}</h3>
+                    <h3 class="text-white">${post.title.rendered}</h3>
                 </a>`;
         };
 

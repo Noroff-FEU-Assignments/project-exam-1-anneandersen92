@@ -144,7 +144,7 @@ button:disabled {
     width: 60px;
     margin: 6px;
     margin-bottom: 12px;
-    filter: invert(70%) sepia(11%) saturate(448%) hue-rotate(350deg) brightness(92%) contrast(93%);
+    filter: invert(36%) sepia(48%) saturate(315%) hue-rotate(352deg) brightness(84%) contrast(82%);
 }
 
 .insta-posts {
@@ -196,7 +196,7 @@ button:disabled {
     top: 8px;
     right: 12px;
     width: 100px;
-    filter: invert(100%) sepia(1%) saturate(983%) hue-rotate(262deg) brightness(116%) contrast(100%);
+    filter: invert(93%) sepia(7%) saturate(426%) hue-rotate(358deg) brightness(104%) contrast(86%);
     z-index: -2;
 }
 

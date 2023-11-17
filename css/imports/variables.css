@@ -5,20 +5,24 @@
 
 :root {
     /* colors */
-    --clr-light-beige: #f2ece5;
+    --clr-light-beige: #D9D1C4;
+    /**/
     --clr-medium-beige-90: #d3c5b590;
-    --clr-dark-beige: #b0a28e;
+    /*nothing done*/
+    --clr-dark-beige: #6D5A44;
+    /*same as dark-green, edit to dark-brown*/
 
-    --clr-light-green: #dadfcd;
-    --clr-dark-green: #849163;
+    --clr-light-green: #BEAE97;
+    /*edit to light-brown*/
+    --clr-dark-green: #6D5A44;
+    /*same as dark-beige, edit to dark-brown*/
 
-    --clr-white: #ffffff;
-    --clr-white-80: #ffffff80;
+    --clr-white: #EDE8D9;
+    /*edit to ecru*/
+    --clr-white-80: #EDE8D980;
+    /*edit to ecru-80*/
     --clr-charcoal: #333333;
-
-    /*--clr-light-beige-90: #f5f0ea90;*/
-    /*--clr-medium-beige: #e5dcd2;*/
-    /*--clr-medium-green: #b0be90;*/
+    /*OK*/
 
     /* typography */
     --ff-heading: Popstick;
@@ -47,7 +51,6 @@
     --ls-1: 1px;
     --ls-2: 2px;
     --ls-3: 3px;
-    /*--ls-4: 4px;*/
 
     /* margin */
     --mgn-zero: 0;
