@@ -123,6 +123,19 @@ button:disabled {
 
 
 /* index page */
+
+.newest-post,
+.most-read,
+.so-me,
+.how-to,
+.collabs {
+    margin-top: 24px;
+}
+
+.collabs {
+    margin-bottom: -16px;
+}
+
 .newest-post .new-post h3 {
     width: auto;
     max-width: 500px;
@@ -245,10 +258,6 @@ button:disabled {
     padding: 2px;
 }
 
-.collabs {
-    margin-bottom: -40px;
-}
-
 .collab-logos {
     display: grid;
     grid-template-columns: 1fr 1fr .5fr 1fr;
@@ -309,15 +318,14 @@ button:disabled {
 .large-posts {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
 }
 
 .small-posts {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    column-gap: 24px;
-    row-gap: 32px;
+    gap: 24px;
     padding-top: 24px;
 }
 
@@ -646,5 +654,14 @@ textarea {
     .large-post,
     .small-post {
         height: 500px;
+    }
+
+    .large-posts {
+        gap: 32px;
+    }
+
+    .small-posts {
+        gap: 32px;
+        padding-top: 32px;
     }
 }
