@@ -91,6 +91,27 @@ button:disabled {
     cursor: auto;
 }
 
+.loader {
+    border: 12px solid var(--clr-light-brown);
+    border-top: 12px solid var(--clr-dark-brown);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: 48px auto;
+    grid-column-end: 3;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 /* breadcrumb navigation */
 .breadcrumb-items {
@@ -99,7 +120,6 @@ button:disabled {
     display: flex;
     gap: 4px;
 }
-
 
 
 /* index page */
@@ -557,6 +577,7 @@ textarea {
         row-gap: 40px;
     }
 }
+
 
 @media only screen and (min-width: 1200px) {
 

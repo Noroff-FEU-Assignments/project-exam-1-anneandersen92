@@ -72,5 +72,3 @@ function createBlogpostHtml(details) {
 }
 
 fetchProductDetails();
-
-
