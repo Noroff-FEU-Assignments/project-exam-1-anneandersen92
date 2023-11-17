@@ -71,23 +71,24 @@ button {
     max-width: 500px;
     margin-top: 32px;
     padding: 8px 12px;
-    background-color: var(--clr-dark-beige);
-    border: solid 1px var(--clr-dark-beige);
+    background-color: var(--clr-dark-brown);
+    border: solid 1px var(--clr-dark-brown);
     font-family: var(--ff-body);
     font-size: var(--fs-body);
     font-weight: var(--fw-500);
-    color: var(--clr-white);
+    color: var(--clr-ecru);
 }
 
 button:hover {
-    background-color: var(--clr-dark-green);
+    background-color: var(--clr-dark-brown);
     cursor: pointer;
 }
 
 button:disabled {
-    background: var(--clr-white);
-    color: var(--clr-dark-beige);
+    background: var(--clr-light-brown);
+    color: var(--clr-ecru);
     border: none;
+    cursor: auto;
 }
 
 
@@ -338,7 +339,8 @@ button:disabled {
 }
 
 .banner-img,
-.wp-block-image {
+.wp-block-image,
+.about-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -350,9 +352,14 @@ button:disabled {
     max-height: 300px;
 }
 
-.inner-img .post-img {
+.inner-img .post-img,
+.about-inner-img {
     width: 60%;
     height: auto;
+}
+
+.about-img {
+    cursor: auto;
 }
 
 .modal {
@@ -420,7 +427,7 @@ textarea {
     font-size: var(--fs-body);
     font-weight: var(--fw-300);
     color: var(--clr-charcoal);
-    border: solid 1px var(--clr-dark-beige);
+    border: solid 1px var(--clr-dark-brown);
 }
 
 .form-error {
@@ -434,7 +441,7 @@ textarea {
 }
 
 .response-message {
-    background-color: var(--clr-dark-green);
+    background-color: var(--clr-dark-brown);
     text-align: center;
     padding: 24px;
     margin: 32px auto;
@@ -442,7 +449,7 @@ textarea {
 }
 
 .response-message p {
-    color: var(--clr-white);
+    color: var(--clr-ecru);
 }
 
 

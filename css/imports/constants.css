@@ -5,19 +5,19 @@
 }
 
 .text-white {
-    color: var(--clr-white);
+    color: var(--clr-ecru);
 }
 
 .text-white-80 {
-    color: var(--clr-white-80);
+    color: var(--clr-ecru-80);
 }
 
-.text-beige {
-    color: var(--clr-dark-beige);
+.text-brown {
+    color: var(--clr-dark-brown);
 }
 
-.text-green {
-    color: var(--clr-dark-green);
+.text-brown {
+    color: var(--clr-dark-brown);
 }
 
 .fs-body-small {
@@ -48,16 +48,16 @@
     background-color: var(--clr-medium-beige-90);
 }
 
-.bg-dark-beige {
-    background-color: var(--clr-dark-beige);
+.bg-dark-brown {
+    background-color: var(--clr-dark-brown);
 }
 
-.bg-light-green {
-    background-color: var(--clr-light-green);
+.bg-light-brown {
+    background-color: var(--clr-light-brown);
 }
 
-.bg-dark-green {
-    background-color: var(--clr-dark-green);
+.bg-dark-brown {
+    background-color: var(--clr-dark-brown);
 }
 
 .bg-charcoal {
