@@ -39,7 +39,7 @@ async function fetchIndex() {
 
         function createNewPostHtml(post) {
             newPost.innerHTML += `
-                <a href="blogpost.html?id=${post.id}" style="background-image: url(${post._embedded["wp:featuredmedia"][0].source_url})" alt="${post._embedded["wp:featuredmedia"][0].alt_text}" class="large-post new-post pad-all rounded">
+                <a href="blogpost.html?id=${post.id}" style="background-image: url(${post._embedded["wp:featuredmedia"][0].source_url})" alt="${post._embedded["wp:featuredmedia"][0].alt_text}" class="new-post pad-all rounded">
                     <h2 class="text-ecru-80">New post</h2>
                     <h3 class=" bg-light-beige rounded">${post.title.rendered}</h3>
                 </a>`;

@@ -144,6 +144,17 @@ button:disabled {
     margin-bottom: -16px;
 }
 
+.new-post {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    background-size: cover;
+    background-position: center;
+    padding-top: 0;
+    margin-block: var(--mgn-zero);
+    height: 300px;
+}
+
 .newest-post .new-post h3 {
     width: auto;
     max-width: 500px;
@@ -335,9 +346,8 @@ button:disabled {
 
 .large-post,
 .small-post {
-    display: grid;
-    grid-template-rows: auto auto;
-    justify-items: center;
+    display: flex;
+    justify-content: end;
     background-size: cover;
     background-position: center;
     padding-top: 0;
@@ -351,12 +361,6 @@ button:disabled {
     padding: 12px;
     margin-block: var(--mgn-zero);
 }
-
-.small-post h2 {
-    width: 100%;
-    margin-block: var(--mgn-zero);
-}
-
 
 /* blogpost page & about page */
 .blogpost .bg-light-beige {
