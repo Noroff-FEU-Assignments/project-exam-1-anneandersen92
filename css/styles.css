@@ -67,7 +67,8 @@ h3 {
 
 p,
 li,
-li a {
+li a,
+.wp-block-post-date {
     font-family: var(--ff-body);
     font-size: var(--fs-body);
     font-weight: var(--fw-300);
@@ -382,7 +383,7 @@ button:disabled {
 
 /* blogpost page & about page */
 .blogpost .bg-light-beige {
-    padding: 8px 0;
+    padding: 1px 0;
 }
 
 .blogpost,
@@ -456,6 +457,12 @@ button:disabled {
     max-width: 90%;
     width: auto;
     object-fit: contain;
+}
+
+.wp-block-post-date {
+    padding-bottom: 16px;
+    text-align: center;
+    font-style: italic;
 }
 
 
