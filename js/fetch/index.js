@@ -54,11 +54,15 @@ async function fetchIndex() {
         };
 
         function createHowToHtml(post) {
+            let originalHeading = `${post.title.rendered}`;
+            let newHeading = originalHeading.replace("How to", "...");
+
             howToPosts.innerHTML += `
                 <a href="blogpost.html?id=${post.id}" class="how-to-card bg-dark-brown rounded">
                     <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="${post._embedded["wp:featuredmedia"][0].alt_text}">
-                    <h3 class="text-ecru">${post.title.rendered}</h3>
+                    <h3 class="text-ecru">${newHeading}</h3>
                 </a>`;
+
         };
 
     } catch (error) {
