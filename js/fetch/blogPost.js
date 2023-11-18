@@ -47,6 +47,11 @@ function createBlogpostHtml(details) {
     const images = document.querySelectorAll(".blogpost .post-img");
     let imgSrc;
 
+    // const zoom = document.createElement("img");
+    // zoom.src = "../../resources/icons/cross-small.svg";
+    // zoom.setAttribute("class", "zoom");
+    // document.querySelector(".wp-block-image.size-full").append(zoom);
+
     images.forEach((img) => {
         img.addEventListener("click", (e) => {
             imgSrc = e.target.src;
@@ -60,6 +65,14 @@ function createBlogpostHtml(details) {
         document.querySelector(".blogpost").append(modal);
         const newImage = document.createElement("img");
         newImage.setAttribute("src", src);
+
+        modal.addEventListener("mouseout", function () {
+            if (newImage === event.target) {
+                modal.style.cursor = "zoom-out";
+            } else if (newImage !== event.target) {
+                modal.style.cursor = "initial";
+            }
+        });
 
         modal.addEventListener("click", function () {
             if (newImage !== event.target) {
