@@ -7,11 +7,11 @@ import { createFooter } from "./components/footer.js";
 // document.querySelector(".wp-block-image.size-full").append(zoom);
 
 
-const backToTopBtn = document.createElement("button");
-backToTopBtn.innerHTML = `<img class="back-to-top-img" src="../resources/icons/angle-small-down.svg" aria-label="button to scroll directly back to the top">`;
-backToTopBtn.setAttribute("class", "back-to-top-btn");
-document.body.append(backToTopBtn);
+const scrollToTopBtn = document.createElement("button");
+scrollToTopBtn.innerHTML = `<img class="scroll-to-top-img" src="../resources/icons/angle-small-down.svg" aria-label="button to scroll directly back to the top">`;
+scrollToTopBtn.setAttribute("class", "scroll-to-top-btn");
+document.body.append(scrollToTopBtn);
 
-backToTopBtn.addEventListener("click", function () {
+scrollToTopBtn.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
