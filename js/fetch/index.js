@@ -67,7 +67,7 @@ async function fetchIndex() {
 
     } catch (error) {
         howToPosts.innerHTML = displayError("An error occured when calling the API");
-    }
+    };
 };
 
 fetchIndex();

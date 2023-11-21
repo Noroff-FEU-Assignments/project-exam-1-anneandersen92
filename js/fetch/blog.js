@@ -54,8 +54,7 @@ async function fetchBlog() {
     } catch (error) {
         largePosts.innerHTML = displayError("An error occured when calling the API");
         smallPosts.innerHTML = displayError("An error occured when calling the API");
-    }
+    };
 };
 
 fetchBlog();
-

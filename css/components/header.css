@@ -57,9 +57,9 @@ label[for=nav-dots]:hover {
     text-transform: var(--tt-lower);
 }
 
-/* media */
 
 @media only screen and (min-width: 768px) {
+
     .blog-name {
         font-size: var(--fs-h1-pc);
         line-height: 1.2;
@@ -74,13 +74,12 @@ label[for=nav-dots]:hover {
     }
 }
 
+
 @media only screen and (min-width: 1200px) {
 
     .header-content {
         padding: 24px 0px;
     }
-
-    /**/
 
     .nav-btn,
     label[for=nav-dots],
@@ -102,5 +101,4 @@ label[for=nav-dots]:hover {
         font-size: var(--fs-h3-pc);
         letter-spacing: var(--ls-2);
     }
-
 }

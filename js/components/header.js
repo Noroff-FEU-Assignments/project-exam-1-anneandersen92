@@ -29,5 +29,5 @@ export function createHeader() {
                     </div>
                 </nav>
             </div>
-        </div>`
+        </div>`;
 };
