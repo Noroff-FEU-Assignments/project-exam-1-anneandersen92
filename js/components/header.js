@@ -25,7 +25,7 @@ export function createHeader() {
                         <a href="blog.html">Blog</a>
                         <a href="contact.html">Contact</a>
                         <a href="about.html">About</a>
-                        <a href="index.html">Home</a>
+                        <a href="index.html" class="home">Home</a>
                     </div>
                 </nav>
             </div>

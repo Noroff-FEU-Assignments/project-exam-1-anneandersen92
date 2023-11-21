@@ -47,6 +47,10 @@ h1 {
     padding: 0 32px;
 }
 
+.hidden {
+    display: none;
+}
+
 h2 {
     font-size: var(--fs-h2);
     letter-spacing: var(--ls-2);
@@ -282,9 +286,9 @@ button:disabled {
 .how-to-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 120px;
     align-items: center;
     text-align: center;
-    height: 120px;
 }
 
 .how-to-card img {
@@ -418,15 +422,6 @@ button:disabled {
     max-width: 400px;
     max-height: 600px;
 }
-
-/* .zoom {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-    width: 30px;
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    border: 1px green solid;
-} */
 
 .modal {
     width: 100%;
@@ -652,8 +647,17 @@ textarea {
         min-width: 220px;
     }
 
+    .how-to-posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
     .how-to-card {
-        height: 200px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 120px;
+        height: auto;
+        align-items: start;
     }
 
     .partner-logos {

@@ -70,6 +70,35 @@ label[for=nav-dots]:hover {
     }
 
     .nav-btn {
-        width: 40px;
+        width: 35px;
     }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .header-content {
+        padding: 24px 0px;
+    }
+
+    .nav-btn,
+    label[for=nav-dots],
+    .home {
+        display: none;
+    }
+
+    nav {
+        display: inline;
+    }
+
+    .nav-items {
+        flex-direction: row;
+        padding: 0px;
+        gap: 56px;
+    }
+
+    .nav-items a {
+        font-size: var(--fs-h3-pc);
+        letter-spacing: var(--ls-2);
+    }
+
 }
