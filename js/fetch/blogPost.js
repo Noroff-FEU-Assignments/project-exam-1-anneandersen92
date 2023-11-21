@@ -81,7 +81,7 @@ function createBlogpostHtml(details) {
         });
 
         modal.append(newImage);
-    };
+    }
 }
 
 fetchProductDetails();

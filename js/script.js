@@ -13,5 +13,5 @@ scrollToTopBtn.setAttribute("class", "scroll-to-top-btn");
 document.body.append(scrollToTopBtn);
 
 scrollToTopBtn.addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smooth" })
 });

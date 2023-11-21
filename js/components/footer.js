@@ -21,5 +21,5 @@ export function createFooter() {
                 <img src="resources/icons/instagram.svg" aria-label="instagram logo" class="instagram">
                 <img src="resources/icons/facebook.svg" aria-label="facebook logo" class="facebook">
             </div>
-        </div>`;
+        </div>`
 };

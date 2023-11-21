@@ -8,7 +8,7 @@ const subjectError = document.querySelector("#subject-error");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#message-error");
 const formButton = document.querySelector(".submit-btn");
-const responseMessage = document.querySelector("#response-message")
+const responseMessage = document.querySelector("#response-message");
 
 function validateForm(event) {
     event.preventDefault();
