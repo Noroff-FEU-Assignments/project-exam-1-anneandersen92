@@ -10,33 +10,37 @@ const messageError = document.querySelector("#message-error");
 const formButton = document.querySelector(".submit-btn");
 const responseMessage = document.querySelector("#response-message");
 
-function validateForm(event) {
-    event.preventDefault();
-
+function checkName() {
     if (checkLength(name.value, 5)) {
         nameError.style.display = "none";
     } else {
         nameError.style.display = "block";
     };
+};
 
+function checkEmail() {
     if (validateEmail(email.value)) {
         emailError.style.display = "none";
     } else {
         emailError.style.display = "block";
     };
+};
 
+function checkSubject() {
     if (checkLength(subject.value, 15)) {
         subjectError.style.display = "none";
     } else {
         subjectError.style.display = "block";
     };
+};
 
+function checkMessage() {
     if (checkLength(message.value, 25)) {
         messageError.style.display = "none";
     } else {
         messageError.style.display = "block";
     };
-};
+}
 
 function checkLength(value, len) {
     if (value.trim().length >= len) {
@@ -71,6 +75,9 @@ export function submitForm(event) {
     };
 };
 
-form.addEventListener("keyup", validateForm);
+name.addEventListener("keyup", checkName);
+email.addEventListener("keyup", checkEmail);
+subject.addEventListener("keyup", checkSubject);
+message.addEventListener("keyup", checkMessage);
 form.addEventListener("keyup", checkButton);
 form.addEventListener("submit", submitForm);
