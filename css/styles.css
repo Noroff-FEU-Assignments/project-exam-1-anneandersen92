@@ -127,6 +127,18 @@ button:disabled {
     grid-column-end: 3;
 }
 
+.error {
+    width: 100%;
+    text-align: center;
+    grid-column: 1 / span 3;
+}
+
+.error p {
+    color: #F20732;
+    font-weight: var(--fw-500);
+}
+
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);

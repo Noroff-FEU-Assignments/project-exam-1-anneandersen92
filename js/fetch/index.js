@@ -66,6 +66,8 @@ async function fetchIndex() {
         };
 
     } catch (error) {
+        newPost.innerHTML = displayError("An error occured when calling the API");
+        mostReadPosts.innerHTML = displayError("An error occured when calling the API");
         howToPosts.innerHTML = displayError("An error occured when calling the API");
     };
 };
