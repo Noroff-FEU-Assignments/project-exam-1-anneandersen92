@@ -12,7 +12,7 @@ The site contains, among other things:
 - an image modal which gives the user an option to get a bigger view of the blog images
 - a contact page with form validation which displays an error message if requirements are not met
 - content that is managed with WordPress, and is fetched using WordPress REST API (CMS is headless)
-- a design responsive across different sized devices
+- a design responsive across different sized devices which is also that appeals to the target audience
 
 ## Built With
 
