@@ -38,8 +38,23 @@ git clone https://github.com/anneandersen92/project-exam-1-anneandersen92.git
 No requirements.
 
 ## Contributing
+If you would like to contribute to the project, please follow these steps:
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+1. Fork the repository
+2. Create a new branch from master:
+```bash
+git checkout -b new-contribution.
+```
+3. Make your changes.
+4. Stage and Commit your changes:
+```bash
+git commit -am 'Add a relevant commit message'
+```
+5. Push to the branch:
+```bash
+git push origin new-contribution
+```
+6. Submit a pull request
 
 ## Contact
 
