@@ -38,7 +38,7 @@ git clone https://github.com/anneandersen92/project-exam-1-anneandersen92.git
 No requirements.
 
 ## Contributing
-If you would like to contribute to the project, please follow these steps:
+To contribute to the project, please do the following:
 
 1. Fork the repository
 2. Create a new branch from master:
