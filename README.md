@@ -1,8 +1,6 @@
-# Your project title
+# OH Sheet Blog | Project Exam 1
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
-
-A simple overview of the use/purpose of the project.
+![image](resources/images/ohsheet.png)
 
 ## Description
 
@@ -16,10 +14,12 @@ You can add some bullet points if you'd like to:
 
 ## Built With
 
-You can list a the tech stack that you've used over here
+This site is built with the following:
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- HTML
+- CSS
+- JavaScript
+- Headless Wordpress
 
 ## Getting Started
 
