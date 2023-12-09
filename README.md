@@ -30,7 +30,7 @@ This site is built with the following:
 3. Run:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone https://github.com/anneandersen92/project-exam-1-anneandersen92.git
 ```
 
 ### Running
