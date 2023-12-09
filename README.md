@@ -21,7 +21,7 @@ This site is built with the following:
 - HTML
 - CSS
 - JavaScript
-- Headless Wordpress
+- Headless WordPress
 
 ## Getting Started
 
