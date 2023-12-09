@@ -4,8 +4,8 @@
 
 ## Description
 
-OH Sheet is an interactive and dynamic blog developed by me for my Project Exam 1 assignment, which is part of the Front-end Development program at Noroff. By using HTML, CSS, JavaScript and headless WordPress I have created a functional and responsive blog with a tidy and modern design.
-The site contains, among other things:
+OH Sheet is an interactive and dynamic blog developed by me for my Project Exam 1 assignment, which is part of the Front-end Development program at Noroff. By using HTML, CSS, JavaScript and headless WordPress I have created a functional and responsive blog with a tidy and modern design. The site features, among other things:
+
 - a home page with a 'most read' section displaying posts in a carousel
 - a blog page that shows by default the 10 latest posts, with the option to view more
 - a blog specific page consisting of content dynamically built using query string parameters
