@@ -4,13 +4,16 @@
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+OH Sheet Blog is an interactive and dynamic blog developed in my Project Exam 1 assignment, which is part of the Front-end Development program at Noroff.
 
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+Key features include:
+- home page – a 'most read' section displaying posts in a carousel
+- blog page – shows by default the 10 latest posts, with the option to view more
+- blog specific page – dynamically built content using query string parameters
+- blog post image modal – option to click and get a bigger view of the blog images
+- contact page – with form validation which displays an error message if requirements are not met
+- WordPress – content is managed with WordPress, and is fetched using WordPress REST API (CMS is headless)
+- responsive design – the site is responsive across devices
 
 ## Built With
 
