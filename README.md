@@ -4,16 +4,15 @@
 
 ## Description
 
-OH Sheet Blog is an interactive and dynamic blog developed in my Project Exam 1 assignment, which is part of the Front-end Development program at Noroff.
-
-Key features include:
-- home page – a 'most read' section displaying posts in a carousel
-- blog page – shows by default the 10 latest posts, with the option to view more
-- blog specific page – dynamically built content using query string parameters
-- blog post image modal – option to click and get a bigger view of the blog images
-- contact page – with form validation which displays an error message if requirements are not met
-- WordPress – content is managed with WordPress, and is fetched using WordPress REST API (CMS is headless)
-- responsive design – the site is responsive across devices
+OH Sheet is an interactive and dynamic blog developed by me for my Project Exam 1 assignment, which is part of the Front-end Development program at Noroff. By using HTML, CSS, JavaScript and headless WordPress I have created a functional and responsive blog with a tidy and modern design.
+The site contains, among other things:
+- a home page with a 'most read' section displaying posts in a carousel
+- a blog page that shows by default the 10 latest posts, with the option to view more
+- a blog specific page consisting of content dynamically built using query string parameters
+- an image modal which gives the user an option to get a bigger view of the blog images
+- a contact page with form validation which displays an error message if requirements are not met
+- content that is managed with WordPress, and is fetched using WordPress REST API (CMS is headless)
+- a design responsive across different sized devices
 
 ## Built With
 
