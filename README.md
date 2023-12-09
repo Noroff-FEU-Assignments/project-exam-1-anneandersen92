@@ -45,4 +45,4 @@ Here you can detail any information you want to provide regarding contributing t
 
 [My Email](mailto:anne_92@live.no?subject=OH%20Sheet%20inquiry)
 
-[My LinkedIn page](www.linkedin.com/in/anne-andersen-7ba49b58)
+[My LinkedIn page](https://www.linkedin.com/in/anne-andersen-7ba49b58)
