@@ -1,4 +1,4 @@
-# OH Sheet Blog | Project Exam 1
+# OH Sheet | Project Exam 1
 
 ![image](resources/images/ohsheet.png)
 
