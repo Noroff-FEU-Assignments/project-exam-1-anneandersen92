@@ -4,7 +4,7 @@
 
 ## Description
 
-OH Sheet is an interactive and dynamic blog developed by me for my Project Exam 1 assignment, which is part of the Front-end Development program at Noroff. By using HTML, CSS, JavaScript and headless WordPress I have created a functional and responsive blog with a tidy and modern design.
+[OH Sheet](https://ohsheet-andersen.netlify.app/) is a blog developed by me for my Project Exam 1 assignment, which is part of the Front-end Development program at Noroff. By using HTML, CSS, JavaScript and headless WordPress I have created an interactive and dynamic blog, with a responsive, tidy, and modern design.
 
 Key features include:
 
